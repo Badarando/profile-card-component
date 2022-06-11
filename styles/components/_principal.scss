@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 9rem;
+    background-image: url(../../images/bg-pattern-top.svg);
+    background-position-x: right;
+    
+    
+    background-repeat: no-repeat;
+    background-color: $dark-cyan;
+
+    .content {
+        width: 20rem;
+        height: 22rem;
+
+        background-color: #fff;
+        border-radius: 10px;
+
+            .cabecalho {
+                width:100%;
+                border-radius: 10px 10px 0 0;
+            }
+    }
+
+    @include breakpoint(web){
+        background-color: red;
+    }
+}
+
+// https://github.com/Nisha213-mar/profile-card-component-main/blob/main/style.css

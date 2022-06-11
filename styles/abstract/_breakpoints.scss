@@ -1,0 +1,7 @@
+@mixin breakpoint($web){
+    @if $web = small-up {
+        @media (min-width: 23.5em){
+            @content;
+        }
+    }
+}
