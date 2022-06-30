@@ -356,8 +356,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 9rem;
-  background-image: url(../../images/bg-pattern-top.svg);
-  background-position-x: right;
+  background-image: url(../../images/bg-pattern-top.svg), url(../../images/bg-pattern-bottom.svg);
+  background-position: 123% 140%, -26% -60%;
   background-repeat: no-repeat;
   background-color: #19a2ae;
 }
@@ -374,9 +374,20 @@ body .content .cabecalho {
   border-radius: 10px 10px 0 0;
 }
 
+body .content .id_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  border: 5px solid #fff;
+  border-radius: 100%;
+  margin-top: -3.4em;
+  position: relative;
+}
+
 @media (min-width: 23.5em) {
   body {
-    background-color: red;
+    background-color: #19a2ae;
   }
 }
 /*# sourceMappingURL=styles.css.map */

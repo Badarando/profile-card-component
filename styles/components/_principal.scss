@@ -5,16 +5,15 @@ body {
     align-items: center;
 
     margin-top: 9rem;
-    background-image: url(../../images/bg-pattern-top.svg);
-    background-position-x: right;
-    
-    
+    background-image: url(../../images/bg-pattern-top.svg), url(../../images/bg-pattern-bottom.svg);
+    background-position: 123% 140%, -26% -60%;
     background-repeat: no-repeat;
     background-color: $dark-cyan;
 
     .content {
         width: 20rem;
         height: 22rem;
+
 
         background-color: #fff;
         border-radius: 10px;
@@ -23,10 +22,19 @@ body {
                 width:100%;
                 border-radius: 10px 10px 0 0;
             }
+
+            .id_image {
+                display: flex;
+                margin: auto;
+                border: 5px solid #fff;
+                border-radius: 100%;
+                margin-top: -3.4em;
+                position: relative;
+            }
     }
 
     @include breakpoint(web){
-        background-color: red;
+        background-color: $dark-cyan;
     }
 }
 
