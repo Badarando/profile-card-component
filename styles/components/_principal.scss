@@ -9,33 +9,74 @@ body {
     background-position: 123% 140%, -26% -60%;
     background-repeat: no-repeat;
     background-color: $dark-cyan;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
 
-    .content {
-        width: 20rem;
-        height: 22rem;
+        .content {
+            width: 20rem;
+            height: 22rem;
 
 
-        background-color: #fff;
-        border-radius: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            text-align: center;
 
-            .cabecalho {
-                width:100%;
-                border-radius: 10px 10px 0 0;
-            }
+                .cabecalho {
+                    width:100%;
+                    border-radius: 10px 10px 0 0;
+                }
 
-            .id_image {
-                display: flex;
-                margin: auto;
-                border: 5px solid #fff;
-                border-radius: 100%;
-                margin-top: -3.4em;
-                position: relative;
-            }
-    }
+                .id_image {
+                    display: flex;
+                    margin: auto;
+                    border: 5px solid #fff;
+                    border-radius: 100%;
+                    margin-top: -3.4em;
+                    position: relative;
+                }
 
-    @include breakpoint(web){
-        background-color: $dark-cyan;
-    }
+                span {
+                    font-weight: 400;
+                    color: $dark-gray;
+                }
+
+                h2 {
+                    font-weight: 400;
+                    color: $dark-gray;
+                }
+
+                footer{
+                    border-top: 1px solid hsla(0, 0%, 59%, 0.342);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    text-align: center;
+
+                    .stats {
+                        height: 3.2rem;
+                        width: 3.2rem;
+                        margin-top: 0.5rem;
+
+                        line-height: 0.5rem;
+
+                            p {
+                                font-size: 13px;
+                                font-weight: 400;
+                            }
+                    }
+                }
+        }
+
+        .attribution {
+            margin-top: 0.2rem;
+        }
+
+        @include breakpoint(web){
+            background-position: -65% 110%, 150% -70%;
+
+        }
 }
 
 // https://github.com/Nisha213-mar/profile-card-component-main/blob/main/style.css
